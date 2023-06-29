@@ -12,36 +12,10 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="6f4bb2a7-5688-4617-894e-f975be40de16">
-      <console name="Connection" type="STANDARD" schema="mysql" session="Main"><![CDATA[create database blog;
-use blog;
+    <connection id="a3fbb675-bb4a-4f61-bdfd-1f5f4a534c53">
+      <console name="springboot-developer" type="STANDARD" schema="blog" session="Main"><![CDATA[insert into test(content) values ('테스트');
 
-create table article(
-    id bigint not null AUTO_INCREMENT,
-    author varchar(255) not null,
-    content varchar(255) not null,
-    created_at timestamp,
-    title varchar(255) not null,
-    updated_at timestamp,
-    primary key (id)
-);
-
-create table refresh_token(
-    id bigint not null AUTO_INCREMENT,
-    refresh_token varchar(255) not null,
-    user_id bigint not null,
-    primary key (id)
-);
-
-create table users(
-    id bigint not null AUTO_INCREMENT,
-    created_at timestamp,
-    email varchar(255) not null,
-    nickname varchar(255),
-    password varchar(255),
-    updated_at timestamp,
-    primary key (id)
-);]]></console>
+select *from test;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -50,8 +24,23 @@ create table users(
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="a3fbb675-bb4a-4f61-bdfd-1f5f4a534c53" dataset="blog.test" active-filter-id="5257b1f2-3661-4c3f-a101-de6cfb5beea3">
+      <filter id="5257b1f2-3661-4c3f-a101-de6cfb5beea3" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+  </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
@@ -62,18 +51,18 @@ create table users(
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="6f4bb2a7-5688-4617-894e-f975be40de16" active="true" signed="true">
+      <connection id="a3fbb675-bb4a-4f61-bdfd-1f5f4a534c53" active="true" signed="true">
         <database>
-          <name value="Connection" />
-          <description value="" />
+          <name value="springboot-developer" />
+          <description value="springboot-developer" />
           <database-type value="MYSQL" />
           <config-type value="BASIC" />
-          <database-version value="8.0" />
+          <database-version value="5.5" />
           <driver-source value="BUNDLED" />
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
-          <host value="awseb-e-2xkjj9hyku-stack-awsebrdsdatabase-t50ucino1zi3.c38nyqnziwkp.ap-northeast-2.rds.amazonaws.com" />
+          <host value="springboot-developer.c38nyqnziwkp.ap-northeast-2.rds.amazonaws.com" />
           <port value="3306" />
           <database value="mysql" />
           <tns-folder value="" />

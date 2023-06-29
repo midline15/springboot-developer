@@ -22,5 +22,3 @@ spring:
 jwt:
   issuer: midline15@gmail.com
   secret_key: study
-server:
-  port: 5000
